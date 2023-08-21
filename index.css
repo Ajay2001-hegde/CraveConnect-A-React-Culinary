@@ -1,0 +1,377 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Select all CSS */
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+/* Header CSS */
+
+.body{
+    background-color: rgba(231, 186, 160, 0);
+    border-radius: 20px;
+}
+
+
+
+
+.custom-link a {
+  color: black; /* Set the desired color for the link */
+  text-decoration: none; /* Remove the underline */
+}
+
+
+
+
+.nav-items > ul >li> button {
+  /* Add your styles here */
+  background-color: #185a7b;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 2rem;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-items > ul > li>button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+/* Body CSS */
+
+.restaurant-list{
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+  width: 200px;
+  height: 300px; /* Set a fixed height for consistent card size */
+  border-radius: 20px;
+  box-shadow: -1px 4px 20px 14px rgba(40, 20, 20, 0.279);
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column; /* Align card content vertically */
+  justify-content: space-between; /* Distribute content evenly */
+  background-color: white;
+  overflow: hidden;/* Set a background color */
+}
+
+.card:hover {
+  background-color: bisque;
+}
+
+.card > img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover; /* Ensure the image fills the container */
+}
+
+.card > span,
+.card > h4 {
+  padding-top: 0.8rem;
+  font-size: medium;
+}
+
+.card > span {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /* Align the star and text vertically */
+}
+
+.card > span > h4 {
+  text-align: center;
+  margin: 0; /* Remove default margin */
+}
+
+.card > span > h4:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(19, 176, 1);
+  border-radius: 5px;
+  padding: 0 5px;
+  color: white;
+}
+
+.card > span > h4:first-child .fa-star {
+  font-size: small;
+  padding-right: 3px;
+}
+
+.cst{
+    padding-top: 1rem;
+}
+.cst{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+
+
+/*Shimmer CSS */
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap for spacing */
+    justify-content: center;
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 20px;
+    background-color: rgba(255, 235, 205, 0.5); /* Set a background color for shimmer */
+  }
+  
+  .shimmer-card {
+    width: 200px; /* Match the width of .card */
+    border-radius: 20px;
+    box-shadow: -1px 4px 20px 14px rgba(40, 20, 20, 0.279);
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    background-color: white; /* Match card background color */
+  }
+  
+  .shimmer-title {
+    width: 80%; /* Adjust width for better alignment */
+    margin-top: 10px;
+  }
+  
+  .shimmer-tags {
+    width: 70%; /* Adjust width for better alignment */
+    margin-top: 4px;
+  }
+  
+  .shimmer-details {
+    width: 100%;
+    margin-top: 18px;
+  }
+  
+  .shimmer-container .shimmer-img {
+    height: 144px;
+    width: 100%; /* Set width to 100% for better responsiveness */
+    border-radius: 10px;
+  }
+  
+  /*Animation to Shimmer Component Cards */
+  .stroke {
+    height: 15px;
+    background: #777;
+  }
+  
+  .animate {
+    animation: shimmer 3s infinite linear; /* Simplify animation properties */
+    background: linear-gradient(to right, #e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+    background-size: 1000px 100%;
+  }
+  
+  @keyframes shimmer {
+    from {
+      background-position: -1000px 0;
+    }
+    to {
+      background-position: 1000px 0;
+    }
+  }
+  
+
+  #searchbox
+  .searchbox {
+    flex: 1; /* Take up available space */
+    padding: 5px 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Styling for search button */
+  .btn_search {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    margin-left: 0.5rem;
+    padding: 4px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn_search:hover {
+    background-color: #0056b3;
+  }
+ 
+  
+  .filter_button {
+    background-color: #165c26;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0; /* Remove margin top to align with other elements */
+    margin-left: 10px; /* Add a little space between buttons */
+  }
+  
+  .filter_button:hover {
+    background-color: #1e7e34;
+  }
+  
+  /* Container for alignment */
+  .filter {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 2rem;
+  }
+
+
+
+/* Styling for the menu header */
+.menu_header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* Styling for the h1 tag */
+.menu_header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the p tag */
+.menu_header p {
+  font-size: 16px;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Styling for the h3 tags */
+.menu_header h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Styling for the image */
+.menu_header img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Styling for the item list within .margin_header */
+.margin_header > ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Styling for each item card */
+.margin_header > ul > li {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.margin_header > ul > li:hover {
+  transform: translateY(-5px);
+}
+
+/* Styling for item name */
+.margin_header > ul > li h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Styling for item description */
+.margin_header > ul > li p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0 10px 0;
+}
+
+/* Styling for item price */
+.margin_header > ul > li span {
+  display: block;
+  font-size: 16px;
+  color: #ff5656;
+}
+
+/* Add more styling here as needed */
+/* Styling for the item list within .ulstyle */
+
+/* Add more styling here as needed */
+.link{
+  text-decoration: none;
+}
+
+.About{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+.container{
+  width: 300px;
+  height: 500px;
+  border: 2px solid black;
+  box-shadow: -1px 4px 20px 14px rgba(31, 17, 17, 0.438);
+  display: flex;
+  background-color: rgb(246, 198, 173);
+    border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: 600px;
+  margin-top: 20px;
+
+}
+
+.aj{
+  width:250px;
+  border-radius: 10px;
+  border: #0056b3;
+  padding-left: 27px;
+  padding-bottom: 70px;
+}
+
+.container>h4{
+  padding-top: 12px;
+}
+.container>h5{
+  padding-top: 12px;
+}
+
+.online{
+  color: #165c26;
+}
+.offline{
+  color:red ;
+}
