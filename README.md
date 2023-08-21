@@ -1,3 +1,1 @@
-
 # YumYard: A React Culinary
-
