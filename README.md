@@ -25,7 +25,6 @@
 ✅ Pure Components
 ✅ Code Splitting
 ✅ React Testing Library
-✅ Interview Questions
 ✅ Uncontrolled Comp.
 ✅ Building Custom Hooks
 ✅ Handling Events
