@@ -1,4 +1,4 @@
-# YumYard: A React Culinary
+# CraveConnect: A React Culinary
 
 
 ✅ React Hooks
